@@ -1,0 +1,24 @@
+{
+  "permissions": {
+    "allow": [
+      "Skill(claude-api)",
+      "Skill(claude-api:*)",
+      "Bash(curl -s -o /dev/null -w \"%{http_code}\\\\n\" 'https://api.fda.gov/drug/orangebook.json?search=products.active_ingredients.name:%22SEMAGLUTIDE%22&limit=1')",
+      "Bash(curl -s 'https://api.fda.gov/drug/orangebook.json?limit=1')",
+      "Bash(python3 -c ' *)",
+      "Bash(curl -s 'https://api.fda.gov/drug/orangebook.json?search=products.active_ingredients.name:%22SEMAGLUTIDE%22+OR+products.brand_name:%22SEMAGLUTIDE%22&limit=100')",
+      "Read(//private/tmp/**)",
+      "Bash(python3 -c \"import json,sys;d=json.load\\(sys.stdin\\);print\\(d.get\\('error'\\) or list\\(d['results'][0].keys\\(\\)\\)\\)\")",
+      "Bash(curl -s 'https://api.fda.gov/drug/orangebook.json?search=products.active_ingredients.name:%22SEMAGLUTIDE%22&limit=2')",
+      "Bash(mkdir -p /private/tmp/claude-501/-Users-dg-patent-intelligence-patent/082f9137-d3b7-42ab-bcfb-11e69ff95dd2/scratchpad/backup)",
+      "Bash(cp -r src/app/api/query src/app/api/agents/structured-query /private/tmp/claude-501/-Users-dg-patent-intelligence-patent/082f9137-d3b7-42ab-bcfb-11e69ff95dd2/scratchpad/backup/)",
+      "Bash(python3 -)",
+      "Bash(curl -s 'https://api.fda.gov/drug/label.json?search=openfda.application_number:%22NDA209637%22&limit=1')",
+      "Bash(curl -s -m 12 -o /dev/null -w \"%{http_code}\\\\n\" 'https://api.patentsview.org/patents/query?q={\"patent_number\":\"11318191\"}')",
+      "Bash(curl -s -m 12 -o /dev/null -w \"%{http_code}\\\\n\" 'https://search.patentsview.org/api/v1/patent/?q={\"patent_id\":\"11318191\"}')",
+      "Bash(curl -s -m 12 -o /dev/null -w \"%{http_code}\\\\n\" 'https://ops.epo.org/3.2/rest-services/published-data/publication/docdb/US.11318191.B2/claims')",
+      "Bash(curl -s -m 15 -A 'Mozilla/5.0' -o /tmp/gp.html -w \"%{http_code} %{size_download}\\\\n\" 'https://patents.google.com/patent/US11318191B2/en')",
+      "Read(//Users/dg/Downloads/**)"
+    ]
+  }
+}

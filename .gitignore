@@ -1,0 +1,28 @@
+# ── Secrets ──────────────────────────────────────────────────────────────
+# credentials.json is a Google service-account key: it contains a private key
+# granting BigQuery access under the project's billing account. It must never
+# be committed. Prefer GCP_CREDENTIALS_JSON or GOOGLE_APPLICATION_CREDENTIALS
+# in the environment; the file is only a local-development convenience.
+credentials.json
+*credentials*.json
+*-key.json
+*.pem
+*.p12
+
+# Environment files (webapp/.gitignore also covers its own)
+.env
+.env.*
+!.env.example
+
+# ── Python ───────────────────────────────────────────────────────────────
+venv/
+__pycache__/
+*.py[cod]
+
+# ── Node ─────────────────────────────────────────────────────────────────
+node_modules/
+
+# ── Editors / OS ─────────────────────────────────────────────────────────
+.DS_Store
+.idea/
+.vscode/
