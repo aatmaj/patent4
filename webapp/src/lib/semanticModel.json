@@ -1,0 +1,94 @@
+{
+  "datasets": [
+    {
+      "project": "bigquery-public-data",
+      "dataset": "fda_drug",
+      "description": "US FDA drug labels and enforcement data. Use for drug active ingredients, indications, warnings, and FDA application numbers.",
+      "tables": [
+        {
+          "name": "drug_label",
+          "description": "Main table containing FDA drug labels (SPL).",
+          "columns": [
+            { "name": "openfda_application_number", "type": "STRING", "description": "FDA Application Number (NDA/ANDA)" },
+            { "name": "openfda_brand_name", "type": "STRING", "description": "Proprietary/brand name of the drug" },
+            { "name": "openfda_generic_name", "type": "STRING", "description": "Generic name" },
+            { "name": "openfda_product_type", "type": "STRING", "description": "Product type (e.g. HUMAN PRESCRIPTION DRUG)" },
+            { "name": "openfda_route", "type": "STRING", "description": "Route of administration" },
+            { "name": "active_ingredient", "type": "STRING", "description": "Active ingredient(s) of the drug" },
+            { "name": "indications_and_usage", "type": "STRING", "description": "Approved indications and usage instructions" },
+            { "name": "dosage_and_administration", "type": "STRING", "description": "Dosage and administration details" },
+            { "name": "warnings", "type": "STRING", "description": "Warnings and precautions" },
+            { "name": "openfda_manufacturer_name", "type": "STRING", "description": "Company manufacturing the drug" }
+          ]
+        }
+      ]
+    },
+    {
+      "project": "patents-public-data",
+      "dataset": "ebi_chembl",
+      "description": "ChEMBL bioactive molecules, targets, and physiochemical properties. Use for LogP, molecular weight, PSA, clinical phase, and therapeutic flags.",
+      "tables": [
+        {
+          "name": "molecule_dictionary",
+          "description": "Primary compound registry.",
+          "columns": [
+            { "name": "molregno", "type": "INT64", "description": "Internal molecule ID — FK for all ChEMBL joins" },
+            { "name": "pref_name", "type": "STRING", "description": "Preferred INN name" },
+            { "name": "chembl_id", "type": "STRING", "description": "Public ChEMBL ID (e.g. CHEMBL25)" },
+            { "name": "max_phase", "type": "INT64", "description": "Max clinical development phase (1-4, 4 = approved)" },
+            { "name": "therapeutic_flag", "type": "INT64", "description": "1 = has therapeutic use" },
+            { "name": "molecule_type", "type": "STRING", "description": "Small molecule, Protein, Antibody, etc." }
+          ]
+        },
+        {
+          "name": "compound_properties",
+          "description": "Lipinski / Veber physiochemical properties for drug-likeness analysis.",
+          "columns": [
+            { "name": "molregno", "type": "INT64", "description": "FK to molecule_dictionary.molregno" },
+            { "name": "mw_freebase", "type": "FLOAT64", "description": "Molecular weight of free base (Da)" },
+            { "name": "alogp", "type": "FLOAT64", "description": "Calculated ALogP (lipophilicity)" },
+            { "name": "psa", "type": "FLOAT64", "description": "Polar Surface Area (Å²)" },
+            { "name": "rtb", "type": "INT64", "description": "Rotatable bond count" },
+            { "name": "hba", "type": "INT64", "description": "H-bond acceptor count" },
+            { "name": "hbd", "type": "INT64", "description": "H-bond donor count" },
+            { "name": "num_ro5_violations", "type": "INT64", "description": "Lipinski Ro5 violations (0 = drug-like)" }
+          ]
+        }
+      ]
+    },
+    {
+      "project": "patents-public-data",
+      "dataset": "patents",
+      "description": "Global patent publications. Use for FTO, patent landscape, assignee analysis, and compound IP coverage.",
+      "tables": [
+        {
+          "name": "publications",
+          "description": "Patent publication records from EPO, USPTO, and other global offices.",
+          "columns": [
+            { "name": "publication_number", "type": "STRING", "description": "Unique publication identifier (e.g. US-9876543-B2)" },
+            { "name": "application_number", "type": "STRING", "description": "Patent application number" },
+            { "name": "title_localized", "type": "ARRAY<STRUCT<text STRING, language STRING>>", "description": "Patent title — access with title_localized[SAFE_OFFSET(0)].text" },
+            { "name": "abstract_localized", "type": "ARRAY<STRUCT<text STRING, language STRING>>", "description": "Patent abstract — access with abstract_localized[SAFE_OFFSET(0)].text" },
+            { "name": "filing_date", "type": "INT64", "description": "Filing date as YYYYMMDD integer" },
+            { "name": "grant_date", "type": "INT64", "description": "Grant date as YYYYMMDD integer (0 if not granted)" },
+            { "name": "publication_date", "type": "INT64", "description": "Publication date as YYYYMMDD integer" },
+            { "name": "assignee", "type": "STRING", "description": "Current owner / assignee of the patent" },
+            { "name": "inventor", "type": "STRING", "description": "Listed inventors" },
+            { "name": "country_code", "type": "STRING", "description": "Patent authority country code (US, EP, WO, JP)" }
+          ]
+        }
+      ]
+    }
+  ],
+  "instructions": [
+    "ALWAYS use fully qualified table names: `project.dataset.table`.",
+    "For patents.publications: title and abstract are ARRAYS. ALWAYS use `title_localized[SAFE_OFFSET(0)].text` and `abstract_localized[SAFE_OFFSET(0)].text` for selecting or filtering — NEVER use `title` or `abstract` directly.",
+    "To search patent titles/abstracts for a compound, use LOWER() with REGEXP_CONTAINS on the localized text fields.",
+    "To search drug labels for active ingredients, use REGEXP_CONTAINS(LOWER(active_ingredient), LOWER('drug_name')).",
+    "To link drug_label to ChEMBL molecules conceptually: search by matching LOWER(openfda_generic_name) or LOWER(active_ingredient) to LOWER(molecule_dictionary.pref_name).",
+    "To get PhysioChem data, always JOIN molecule_dictionary to compound_properties on molregno.",
+    "For FTO queries, focus on patents with country_code IN ('US', 'EP', 'WO') and grant_date > 0.",
+    "Always LIMIT results to 100 rows maximum.",
+    "Return ONLY valid BigQuery Standard SQL with no markdown fences, no explanation, just the raw SQL."
+  ]
+}

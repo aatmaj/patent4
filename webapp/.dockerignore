@@ -1,0 +1,25 @@
+# Keep the build context small and keep secrets out of the image.
+#
+# .env* and credentials.json are listed first because they are the ones that
+# actually matter: anything copied into a layer stays in the image history even
+# if a later layer deletes it. Configuration reaches Cloud Run through
+# --set-env-vars and Secret Manager, never through a baked-in file.
+.env
+.env.*
+!.env.example
+credentials.json
+*.pem
+*.key
+
+node_modules
+.next
+npm-debug.log*
+
+.git
+.gitignore
+.claude
+README.md
+AGENTS.md
+CLAUDE.md
+tests
+scripts

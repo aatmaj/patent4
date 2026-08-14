@@ -1,0 +1,319 @@
+.root {
+  display: flex;
+  height: 100vh;
+  overflow: hidden;
+}
+
+/* ─── Input Panel ─── */
+.inputPanel {
+  width: 380px;
+  min-width: 340px;
+  flex-shrink: 0;
+  height: 100%;
+  overflow-y: auto;
+  padding: 32px 24px;
+  border-right: 1px solid var(--sidebar-border);
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  background: rgba(255,255,255,0.6);
+  backdrop-filter: blur(12px);
+}
+
+/* ─── Input Panel ─── */
+.inputPanel {
+  width: 380px;
+  min-width: 340px;
+  flex-shrink: 0;
+  height: 100%;
+  overflow-y: auto;
+  padding: 32px 24px;
+  border-right: 1px solid var(--sidebar-border);
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.inputHeader { display: flex; flex-direction: column; gap: 6px; }
+
+.inputTitle {
+  font-size: 1.5rem;
+  font-weight: 800;
+  letter-spacing: -0.5px;
+  background: linear-gradient(135deg, #0f172a 0%, #6366f1 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.inputSubtitle { font-size: 0.9rem; color: var(--text-primary); font-weight: 500; }
+.inputDesc { font-size: 0.8rem; color: var(--text-secondary); line-height: 1.5; }
+
+/* Examples */
+.exampleSection { display: flex; flex-direction: column; gap: 8px; }
+.sectionLabel { font-size: 0.72rem; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; color: var(--text-muted); }
+.exampleButtons { display: flex; flex-direction: column; gap: 6px; }
+.exampleBtn {
+  background: rgba(167,139,250,0.06);
+  border: 1px solid rgba(167,139,250,0.12);
+  color: var(--text-secondary);
+  padding: 8px 14px;
+  border-radius: 8px;
+  font-family: inherit;
+  font-size: 0.82rem;
+  cursor: pointer;
+  text-align: left;
+  transition: all 0.2s ease;
+}
+.exampleBtn:hover { background: rgba(167,139,250,0.12); color: var(--text-primary); }
+
+/* Form */
+.formGroup { display: flex; flex-direction: column; gap: 8px; }
+.formRow { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+.label { font-size: 0.8rem; font-weight: 600; color: var(--text-secondary); text-transform: uppercase; letter-spacing: 0.8px; }
+
+.input {
+  background: rgba(0,0,0,0.2);
+  border: 1px solid var(--card-border);
+  border-radius: 10px;
+  padding: 11px 14px;
+  color: var(--text-primary);
+  font-family: inherit;
+  font-size: 0.9rem;
+  outline: none;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+  width: 100%;
+}
+.input:focus { border-color: #a78bfa; box-shadow: 0 0 0 3px rgba(167,139,250,0.15); }
+.input option { background: #0d1117; }
+.textarea { min-height: 80px; resize: vertical; }
+
+/* Markets */
+.marketGrid { display: flex; flex-wrap: wrap; gap: 8px; }
+.marketBtn {
+  padding: 6px 14px; border-radius: 8px; border: 1px solid var(--card-border);
+  background: transparent; color: var(--text-secondary); font-family: inherit;
+  font-size: 0.82rem; font-weight: 600; cursor: pointer; transition: all 0.2s ease;
+}
+.marketBtn:hover { background: rgba(255,255,255,0.04); }
+.marketBtnActive { background: rgba(167,139,250,0.12) !important; border-color: rgba(167,139,250,0.3) !important; color: #a78bfa !important; }
+
+/* Run button */
+.runBtn {
+  display: flex; align-items: center; justify-content: center; gap: 10px;
+  padding: 14px; border-radius: 12px; border: none;
+  background: linear-gradient(135deg, #a78bfa, #7c3aed);
+  color: #fff; font-family: inherit; font-size: 0.95rem; font-weight: 700;
+  cursor: pointer; transition: all 0.3s ease;
+  box-shadow: 0 4px 20px rgba(124,58,237,0.4);
+  margin-top: 8px;
+}
+.runBtn:hover:not(:disabled) { transform: translateY(-2px); box-shadow: 0 8px 28px rgba(124,58,237,0.5); }
+.runBtn:disabled { background: rgba(255,255,255,0.05); color: var(--text-muted); box-shadow: none; cursor: not-allowed; }
+
+.loadingHint { font-size: 0.78rem; color: var(--text-muted); line-height: 1.6; display: flex; flex-direction: column; gap: 4px; }
+
+/* Run timer. The elapsed figure is the reassurance that the request is alive,
+   so it is the largest thing in the block and uses tabular figures — otherwise
+   the digits shift width every second and the number visibly jitters. */
+.timerBlock { display: flex; flex-direction: column; gap: 6px; width: 100%; margin-bottom: 4px; }
+.timerRow { display: flex; align-items: baseline; gap: 8px; }
+.timerValue,
+.timerValueWarn {
+  font-size: 1.35rem;
+  font-weight: 600;
+  font-variant-numeric: tabular-nums;
+  letter-spacing: 0.01em;
+}
+.timerValue { color: var(--text-primary); }
+.timerValueWarn { color: #f59e0b; }
+.timerNote { font-size: 0.72rem; color: var(--text-muted); }
+.timerInline { font-variant-numeric: tabular-nums; font-weight: 600; }
+
+.progressTrack {
+  height: 3px;
+  width: 100%;
+  border-radius: 2px;
+  background: rgba(148, 163, 184, 0.18);
+  overflow: hidden;
+}
+.progressFill,
+.progressFillWarn { height: 100%; border-radius: 2px; transition: width 1s linear; }
+.progressFill { background: linear-gradient(90deg, #22d3ee, #a78bfa); }
+/* Past the expected duration the bar is pinned full, so it must stop reading as
+   progress and start reading as "still going". */
+.progressFillWarn { background: #f59e0b; animation: pulse 2s ease-in-out infinite; }
+.cancelBtn {
+  margin-top: 8px;
+  align-self: flex-start;
+  background: rgba(248,113,113,0.08);
+  border: 1px solid rgba(248,113,113,0.2);
+  color: #f87171;
+  padding: 6px 14px;
+  border-radius: 8px;
+  font-family: inherit;
+  font-size: 0.78rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+.cancelBtn:hover { background: rgba(248,113,113,0.14); }
+.errorBox { display: flex; align-items: center; gap: 10px; background: rgba(248,113,113,0.08); border: 1px solid rgba(248,113,113,0.2); border-radius: 10px; padding: 12px 16px; color: #f87171; font-size: 0.85rem; }
+
+/* ─── Results Panel ─── */
+.resultsPanel { flex: 1; min-width: 0; height: 100%; overflow-y: auto; padding: 32px 36px; }
+
+/* Empty / Loading */
+.emptyState { display: flex; flex-direction: column; align-items: center; justify-content: center; min-height: 60vh; gap: 16px; text-align: center; }
+.emptyState h3 { font-size: 1.4rem; font-weight: 700; color: var(--text-primary); }
+.emptyState p { font-size: 0.9rem; color: var(--text-secondary); max-width: 460px; line-height: 1.6; }
+.emptyIcon { opacity: 0.15; color: #a78bfa; }
+
+.phaseList { display: flex; flex-direction: column; gap: 8px; margin-top: 16px; width: 100%; max-width: 400px; }
+.phaseItem { display: flex; align-items: center; gap: 12px; text-align: left; font-size: 0.83rem; color: var(--text-secondary); }
+.phaseNum { width: 24px; height: 24px; border-radius: 50%; background: rgba(167,139,250,0.15); border: 1px solid rgba(167,139,250,0.2); display: flex; align-items: center; justify-content: center; font-size: 0.72rem; font-weight: 700; color: #a78bfa; flex-shrink: 0; }
+
+.loadingPanel { display: flex; flex-direction: column; align-items: center; justify-content: center; min-height: 60vh; gap: 20px; color: var(--text-secondary); text-align: center; }
+.loadingPanel h3 { font-size: 1.2rem; color: var(--text-primary); }
+
+/* ─── Envelope ─── */
+.envelopeRoot { display: flex; flex-direction: column; gap: 12px; }
+
+.envelopeHeader { display: flex; align-items: flex-start; justify-content: space-between; margin-bottom: 8px; gap: 16px; }
+.envelopeTitle { font-size: 1.5rem; font-weight: 700; color: var(--text-primary); letter-spacing: -0.3px; }
+.envelopeMeta { font-size: 0.82rem; color: var(--text-secondary); margin-top: 4px; }
+
+.exportBtn { display: flex; align-items: center; gap: 6px; background: transparent; border: 1px solid var(--card-border); color: var(--text-secondary); padding: 8px 14px; border-radius: 8px; font-family: inherit; font-size: 0.82rem; font-weight: 600; cursor: pointer; white-space: nowrap; transition: all 0.2s ease; }
+.exportBtn:hover { background: rgba(255,255,255,0.05); color: var(--text-primary); }
+
+.verifyBanner { display: flex; align-items: center; gap: 10px; padding: 12px 16px; border-radius: 12px; font-size: 0.85rem; font-weight: 500; }
+.verifyPass { background: rgba(16,185,129,0.08); border: 1px solid rgba(16,185,129,0.2); color: #10b981; }
+.verifyFail { background: rgba(248,113,113,0.08); border: 1px solid rgba(248,113,113,0.2); color: #f87171; }
+
+/* ─── Executive Summary ─── */
+.summaryCard { background: var(--card-bg); border: 1px solid var(--card-border); border-left: 3px solid #a78bfa; border-radius: 12px; padding: 20px; backdrop-filter: var(--card-blur); }
+.summaryHeader { display: flex; flex-direction: column; gap: 10px; }
+.summaryStatusRow { display: flex; align-items: center; gap: 10px; }
+.summaryStatusLabel { font-size: 1.1rem; font-weight: 800; letter-spacing: 0.5px; }
+.summaryRationale { font-size: 0.9rem; color: var(--text-secondary); line-height: 1.7; }
+.summaryText { font-size: 0.95rem; color: var(--text-primary); line-height: 1.7; }
+.expiryRow { display: flex; align-items: center; flex-wrap: wrap; gap: 8px; margin-top: 12px; padding-top: 12px; border-top: 1px solid var(--card-border); font-size: 0.82rem; }
+.expiryLabel { color: var(--text-muted); font-weight: 600; }
+.expiryValue { font-family: 'JetBrains Mono', monospace; background: rgba(0,0,0,0.06); padding: 2px 8px; border-radius: 4px; color: var(--text-primary); }
+.expiryBasis { font-size: 0.75rem; color: var(--text-muted); font-style: italic; }
+
+/* ─── Verification ─── */
+.verifyDetails { background: var(--card-bg); border: 1px solid var(--card-border); border-radius: 12px; overflow: hidden; }
+.verifyPhaseRow { padding: 10px 16px; border-bottom: 1px solid var(--card-border); }
+.verifyPhaseRow:last-child { border-bottom: none; }
+.verifyPhaseHeader { display: flex; align-items: center; gap: 10px; }
+.verifyPhaseName { font-size: 0.85rem; color: var(--text-secondary); font-weight: 500; }
+.verifyConflicts { margin-top: 6px; padding-left: 20px; display: flex; flex-direction: column; gap: 4px; }
+.verifyConflicts li { font-size: 0.78rem; color: #f87171; list-style: disc; }
+.phasePass { font-size: 0.72rem; font-weight: 800; padding: 2px 8px; border-radius: 4px; background: rgba(16,185,129,0.12); color: #10b981; }
+.phaseFail { font-size: 0.72rem; font-weight: 800; padding: 2px 8px; border-radius: 4px; background: rgba(248,113,113,0.12); color: #f87171; }
+
+/* ─── FTO Risk Grid ─── */
+.riskSummaryGrid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px; margin-bottom: 8px; }
+.riskSummaryCell { background: var(--card-bg); border: 1px solid var(--card-border); border-left: 3px solid #94a3b8; border-radius: 10px; padding: 12px; display: flex; flex-direction: column; gap: 8px; }
+.riskCellHeader { display: flex; align-items: center; justify-content: space-between; gap: 6px; }
+.riskLayerName { font-size: 0.82rem; font-weight: 600; color: var(--text-primary); }
+.riskLevel { font-size: 0.72rem; font-weight: 800; padding: 2px 8px; border-radius: 4px; }
+
+/* ─── Collapsible ─── */
+.collapsible { background: var(--card-bg); border: 1px solid var(--card-border); border-radius: 14px; overflow: hidden; backdrop-filter: var(--card-blur); }
+.collapsibleHeader { display: flex; align-items: center; justify-content: space-between; padding: 16px 20px; background: transparent; border: none; cursor: pointer; width: 100%; color: var(--text-primary); font-family: inherit; font-size: 0.9rem; font-weight: 600; transition: background 0.2s ease; }
+.collapsibleHeader:hover { background: rgba(255,255,255,0.02); }
+.collapsibleTitle { display: flex; align-items: center; gap: 10px; }
+.badge { font-size: 0.72rem; font-weight: 700; padding: 2px 8px; border-radius: 99px; }
+.collapsibleBody { padding: 0 20px 20px; display: flex; flex-direction: column; gap: 10px; }
+
+/* ─── EvidenceTag ─── */
+.evidenceTag { font-size: 0.72rem; font-weight: 800; padding: 2px 7px; border-radius: 4px; font-family: 'JetBrains Mono', monospace; }
+
+/* ─── PropertyTable ─── */
+.tableWrap { overflow-x: auto; border-radius: 8px; border: 1px solid var(--card-border); }
+.propTable, .doeTable, .citeTable { width: 100%; border-collapse: collapse; font-size: 0.83rem; }
+.propTable th, .doeTable th, .citeTable th { background: rgba(0,0,0,0.04); padding: 10px 14px; text-align: left; font-size: 0.72rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.8px; color: var(--text-secondary); border-bottom: 1px solid var(--card-border); }
+.propRow td, .doeTable tr td, .citeTable tr td { padding: 10px 14px; border-bottom: 1px solid rgba(0,0,0,0.04); color: var(--text-secondary); }
+.propRow:hover td { background: rgba(0,0,0,0.02); }
+.propName { font-weight: 600; color: var(--text-primary); white-space: nowrap; }
+.propValue { color: var(--text-primary); font-family: 'JetBrains Mono', monospace; }
+.propUnit { color: var(--text-muted); font-size: 0.78rem; }
+.propMethod { color: var(--text-secondary); font-size: 0.8rem; }
+.propRef { color: var(--text-muted); font-size: 0.78rem; max-width: 200px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+
+/* ─── Patents ─── */
+.patentCard { background: rgba(0,0,0,0.2); border: 1px solid var(--card-border); border-radius: 10px; padding: 14px; }
+.patentHeader { display: flex; align-items: center; gap: 10px; margin-bottom: 8px; flex-wrap: wrap; }
+.patentId { font-size: 0.8rem; background: rgba(249,115,22,0.12); color: #f97316; padding: 2px 8px; border-radius: 4px; }
+.patentTitle { font-size: 0.88rem; color: var(--text-primary); margin-bottom: 6px; }
+.patentRationale { font-size: 0.82rem; color: var(--text-secondary); line-height: 1.5; }
+.patentAssignee { font-size: 0.78rem; color: var(--text-muted); margin-top: 6px; }
+.patentNote { font-size: 0.75rem; color: #f59e0b; font-style: italic; margin-top: 6px; border-top: 1px solid rgba(255,255,255,0.05); padding-top: 6px; }
+.riskBadge { font-size: 0.72rem; font-weight: 700; padding: 2px 8px; border-radius: 4px; }
+.risk_high { background: rgba(248,113,113,0.15); color: #f87171; }
+.risk_medium { background: rgba(245,158,11,0.15); color: #f59e0b; }
+.risk_low { background: rgba(16,185,129,0.15); color: #10b981; }
+
+.attestation { font-size: 0.78rem; color: var(--text-muted); line-height: 1.5; padding: 12px; background: rgba(0,0,0,0.2); border-radius: 8px; }
+
+/* ─── Design Corridors ─── */
+.corridorList { display: flex; flex-direction: column; gap: 10px; }
+.corridorCard { background: var(--card-bg); border: 1px solid rgba(0,0,0,0.06); border-left: 3px solid var(--status-color); border-radius: 10px; padding: 14px; }
+.corridorHeader { display: flex; align-items: center; gap: 10px; margin-bottom: 8px; flex-wrap: wrap; }
+.corridorName { font-size: 0.9rem; flex: 1; color: var(--text-primary); }
+.corridorStatus { font-size: 0.8rem; font-weight: 700; }
+.corridorRationale { font-size: 0.82rem; color: var(--text-secondary); line-height: 1.5; }
+.corridorBounds { display: flex; align-items: center; flex-wrap: wrap; gap: 8px; margin-top: 6px; font-size: 0.82rem; }
+.boundLabel { color: var(--text-muted); font-weight: 600; }
+.boundValue { font-family: 'JetBrains Mono', monospace; background: rgba(0,0,0,0.06); padding: 2px 8px; border-radius: 4px; color: var(--text-primary); }
+.bindingRef { font-size: 0.72rem; color: var(--text-muted); padding: 2px 8px; background: rgba(0,0,0,0.04); border-radius: 4px; }
+.corridorRefs { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 8px; }
+.ref { font-size: 0.75rem; background: rgba(0,0,0,0.05); padding: 2px 8px; border-radius: 4px; color: var(--text-secondary); }
+
+/* ─── DOE Table ─── */
+.doeNote { font-size: 0.8rem; color: var(--text-secondary); margin-bottom: 12px; line-height: 1.5; }
+.doeDesc { font-size: 0.83rem; color: var(--text-primary); line-height: 1.5; max-width: 400px; }
+.hardRow { background: rgba(248,113,113,0.03); }
+.hardBadge { font-size: 0.72rem; font-weight: 700; background: rgba(248,113,113,0.12); color: #f87171; padding: 2px 8px; border-radius: 4px; }
+.softBadge { font-size: 0.72rem; font-weight: 700; background: rgba(100,116,139,0.12); color: #94a3b8; padding: 2px 8px; border-radius: 4px; }
+
+/* ─── Conflicts ─── */
+.conflictCard { background: rgba(245,158,11,0.05); border: 1px solid rgba(245,158,11,0.15); border-radius: 10px; padding: 14px; display: flex; flex-direction: column; gap: 8px; }
+.conflictTopic { font-size: 0.9rem; color: #f59e0b; }
+.conflictRow { display: flex; gap: 10px; font-size: 0.82rem; color: var(--text-secondary); }
+.conflictLabel { color: var(--text-muted); font-weight: 600; min-width: 90px; flex-shrink: 0; }
+.unresolvedTag { font-size: 0.75rem; color: #f59e0b; background: rgba(245,158,11,0.1); padding: 2px 10px; border-radius: 4px; align-self: flex-start; }
+
+/* ─── Open Questions ─── */
+.openList { display: flex; flex-direction: column; gap: 8px; padding-left: 4px; }
+.openList li { font-size: 0.85rem; color: var(--text-secondary); padding: 8px 12px; background: rgba(0,0,0,0.03); border: 1px solid var(--card-border); border-radius: 8px; list-style: none; }
+
+/* ─── Loading Panel ─── */
+.loadingSpinWrap { position: relative; display: flex; align-items: center; justify-content: center; width: 64px; height: 64px; }
+.loadingPulse { position: absolute; color: #a78bfa; animation: pulse 2s ease-in-out infinite; }
+@keyframes pulse { 0%, 100% { opacity: 0.3; transform: scale(0.8); } 50% { opacity: 1; transform: scale(1.1); } }
+
+/* ─── Execution Trace ─── */
+.traceList { display: flex; flex-direction: column; gap: 6px; }
+.traceItem { background: rgba(0,0,0,0.15); border: 1px solid var(--card-border); border-radius: 8px; padding: 10px 14px; }
+.traceHeader { display: flex; align-items: center; gap: 10px; flex-wrap: wrap; }
+.traceTool { font-size: 0.82rem; background: rgba(255,255,255,0.05); padding: 2px 8px; border-radius: 4px; color: var(--text-primary); }
+.traceOk { font-size: 0.75rem; color: #10b981; font-weight: 700; background: rgba(16,185,129,0.1); padding: 2px 8px; border-radius: 4px; }
+.traceError { font-size: 0.75rem; color: #f87171; font-weight: 700; background: rgba(248,113,113,0.1); padding: 2px 8px; border-radius: 4px; }
+.traceErrorMsg { font-size: 0.78rem; color: #f87171; margin-top: 6px; }
+.traceSummary { font-size: 0.78rem; color: var(--text-muted); margin-top: 4px; }
+
+/* ─── Misc ─── */
+.muted { color: var(--text-muted); font-size: 0.8rem; }
+.spin { animation: spin 1s linear infinite; }
+@keyframes spin { 100% { transform: rotate(360deg); } }
+
+/* ─── Raw Data Viewers ─── */
+.rawTextCard { background: rgba(248,113,113,0.05); border: 1px solid rgba(248,113,113,0.2); border-radius: 12px; overflow: hidden; margin-bottom: 12px; }
+.rawTextHeader { display: flex; align-items: center; gap: 10px; padding: 12px 16px; background: rgba(248,113,113,0.1); color: #f87171; font-weight: 600; font-size: 0.85rem; border-bottom: 1px solid rgba(248,113,113,0.2); }
+.rawTextBody { padding: 16px; margin: 0; font-family: 'JetBrains Mono', monospace; font-size: 0.8rem; color: var(--text-secondary); white-space: pre-wrap; word-break: break-all; max-height: 400px; overflow-y: auto; }
+
+.rawJsonActions { display: flex; justify-content: flex-end; margin-bottom: 12px; }
+.rawJson { background: rgba(0,0,0,0.3); border: 1px solid var(--card-border); border-radius: 8px; padding: 16px; margin: 0; font-family: 'JetBrains Mono', monospace; font-size: 0.8rem; color: var(--text-primary); white-space: pre-wrap; word-break: break-all; max-height: 600px; overflow-y: auto; }
+

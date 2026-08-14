@@ -1,0 +1,1287 @@
+{
+  "meta": {
+    "disclaimer": "Do not rely on openFDA to make decisions regarding medical care. While we make every effort to ensure that data is accurate, you should assume all results are unvalidated. We may limit or otherwise restrict your access to the API in line with our Terms of Service.",
+    "terms": "https://open.fda.gov/terms/",
+    "license": "https://open.fda.gov/license/",
+    "last_updated": "2026-08-13",
+    "results": {
+      "skip": 0,
+      "limit": 1,
+      "total": 1
+    }
+  },
+  "results": [
+    {
+      "submissions": [
+        {
+          "submission_type": "SUPPL",
+          "submission_number": "33",
+          "submission_status": "AP",
+          "submission_status_date": "20021018",
+          "review_priority": "STANDARD",
+          "submission_class_code": "EFFICACY",
+          "submission_class_code_description": "Efficacy",
+          "application_docs": [
+            {
+              "id": "13244",
+              "url": "http://www.accessdata.fda.gov/drugsatfda_docs/label/2002/20702s33lbl.pdf",
+              "date": "20021018",
+              "type": "Label"
+            },
+            {
+              "id": "25569",
+              "url": "http://www.accessdata.fda.gov/drugsatfda_docs/appletter/2002/20702se5-033ltr.pdf",
+              "date": "20021018",
+              "type": "Letter"
+            }
+          ]
+        },
+        {
+          "submission_type": "SUPPL",
+          "submission_number": "25",
+          "submission_status": "AP",
+          "submission_status_date": "20010608",
+          "review_priority": "STANDARD",
+          "submission_class_code": "EFFICACY",
+          "submission_class_code_description": "Efficacy",
+          "application_docs": [
+            {
+              "id": "13243",
+              "url": "http://www.accessdata.fda.gov/drugsatfda_docs/label/2001/20702s25lbl.pdf",
+              "date": "20010615",
+              "type": "Label"
+            },
+            {
+              "id": "20851",
+              "url": "http://www.accessdata.fda.gov/drugsatfda_docs/nda/2001/20-702S025_Lipitor.html",
+              "date": "20020410",
+              "type": "Review"
+            },
+            {
+              "id": "25567",
+              "url": "http://www.accessdata.fda.gov/drugsatfda_docs/appletter/2001/20702S25ltr.pdf",
+              "date": "20010615",
+              "type": "Letter"
+            }
+          ]
+        },
+        {
+          "submission_type": "SUPPL",
+          "submission_number": "78",
+          "submission_status": "AP",
+          "submission_status_date": "20200925",
+          "review_priority": "STANDARD",
+          "submission_class_code": "LABELING",
+          "submission_class_code_description": "Labeling",
+          "application_docs": [
+            {
+              "id": "64699",
+              "url": "http://www.accessdata.fda.gov/drugsatfda_docs/appletter/2020/020702Orig1s078ltr.pdf",
+              "date": "20200928",
+              "type": "Letter"
+            },
+            {
+              "id": "64723",
+              "url": "http://www.accessdata.fda.gov/drugsatfda_docs/label/2020/020702s078lbl.pdf",
+              "date": "20200929",
+              "type": "Label"
+            }
+          ]
+        },
+        {
+          "submission_type": "SUPPL",
+          "submission_number": "31",
+          "submission_status": "AP",
+          "submission_status_date": "20011227",
+          "review_priority": "PRIORITY",
+          "submission_class_code": "MANUF (CMC)",
+          "submission_class_code_description": "Manufacturing (CMC)",
+          "application_docs": [
+            {
+              "id": "20854",
+              "url": "http://www.accessdata.fda.gov/drugsatfda_docs/nda/2001/020702_S031_LIPITOR.pdf",
+              "date": "20071206",
+              "type": "Review"
+            }
+          ]
+        },
+        {
+          "submission_type": "SUPPL",
+          "submission_number": "21",
+          "submission_status": "AP",
+          "submission_status_date": "19991201",
+          "review_priority": "PRIORITY",
+          "submission_class_code": "MANUF (CMC)",
+          "submission_class_code_description": "Manufacturing (CMC)",
+          "application_docs": [
+            {
+              "id": "41586",
+              "url": "http://www.accessdata.fda.gov/drugsatfda_docs/nda/99/020702_S021_LIPITOR.pdf",
+              "date": "20071119",
+              "type": "Review"
+            }
+          ]
+        },
+        {
+          "submission_type": "SUPPL",
+          "submission_number": "74",
+          "submission_status": "AP",
+          "submission_status_date": "20191127",
+          "review_priority": "STANDARD",
+          "submission_class_code": "LABELING",
+          "submission_class_code_description": "Labeling",
+          "application_docs": [
+            {
+              "id": "61091",
+              "url": "http://www.accessdata.fda.gov/drugsatfda_docs/appletter/2019/020702Orig1s074ltr.pdf",
+              "date": "20191129",
+              "type": "Letter"
+            },
+            {
+              "id": "61105",
+              "url": "http://www.accessdata.fda.gov/drugsatfda_docs/label/2019/020702s074lbl.pdf",
+              "date": "20191129",
+              "type": "Label"
+            }
+          ]
+        },
+        {
+          "submission_type": "SUPPL",
+          "submission_number": "13",
+          "submission_status": "AP",
+          "submission_status_date": "19980625",
+          "review_priority": "PRIORITY",
+          "submission_class_code": "MANUF (CMC)",
+          "submission_class_code_description": "Manufacturing (CMC)",
+          "application_docs": [
+            {
+              "id": "20847",
+              "url": "http://www.accessdata.fda.gov/drugsatfda_docs/nda/98/020702_S013_LIPITOR.pdf",
+              "date": "20071119",
+              "type": "Review"
+            }
+          ]
+        },
+        {
+          "submission_type": "SUPPL",
+          "submission_number": "9",
+          "submission_status": "AP",
+          "submission_status_date": "19980323",
+          "review_priority": "PRIORITY",
+          "submission_class_code": "MANUF (CMC)",
+          "submission_class_code_description": "Manufacturing (CMC)",
+          "application_docs": [
+            {
+              "id": "41583",
+              "url": "http://www.accessdata.fda.gov/drugsatfda_docs/nda/98/020702_S009_LIPITOR.pdf",
+              "date": "20071119",
+              "type": "Review"
+            }
+          ]
+        },
+        {
+          "submission_type": "SUPPL",
+          "submission_number": "11",
+          "submission_status": "AP",
+          "submission_status_date": "19980804",
+          "review_priority": "PRIORITY",
+          "submission_class_code": "MANUF (CMC)",
+          "submission_class_code_description": "Manufacturing (CMC)",
+          "application_docs": [
+            {
+              "id": "20846",
+              "url": "http://www.accessdata.fda.gov/drugsatfda_docs/nda/98/020702_S011_LIPITOR.pdf",
+              "date": "20071119",
+              "type": "Review"
+            }
+          ]
+        },
+        {
+          "submission_type": "SUPPL",
+          "submission_number": "64",
+          "submission_status": "AP",
+          "submission_status_date": "20140521",
+          "review_priority": "STANDARD",
+          "submission_class_code": "LABELING",
+          "submission_class_code_description": "Labeling",
+          "application_docs": [
+            {
+              "id": "25577",
+              "url": "http://www.accessdata.fda.gov/drugsatfda_docs/appletter/2014/020702Orig1s064ltr.pdf",
+              "date": "20140522",
+              "type": "Letter"
+            },
+            {
+              "id": "35178",
+              "url": "http://www.accessdata.fda.gov/drugsatfda_docs/label/2014/020702s064lbl.pdf",
+              "date": "20140528",
+              "type": "Label"
+            }
+          ]
+        },
+        {
+          "submission_type": "SUPPL",
+          "submission_number": "56",
+          "submission_status": "AP",
+          "submission_status_date": "20090617",
+          "review_priority": "STANDARD",
+          "submission_class_code": "LABELING",
+          "submission_class_code_description": "Labeling",
+          "application_docs": [
+            {
+              "id": "20856",
+              "url": "http://www.accessdata.fda.gov/drugsatfda_docs/nda/2009/020702Orig1s056.pdf",
+              "date": "20130806",
+              "type": "Review"
+            },
+            {
+              "id": "3132",
+              "url": "http://www.accessdata.fda.gov/drugsatfda_docs/appletter/2009/020702s056ltr.pdf",
+              "date": "20101105",
+              "type": "Letter"
+            },
+            {
+              "id": "35174",
+              "url": "http://www.accessdata.fda.gov/drugsatfda_docs/label/2009/020702s056lbl.pdf",
+              "date": "20090622",
+              "type": "Label"
+            }
+          ]
+        },
+        {
+          "submission_type": "SUPPL",
+          "submission_number": "7",
+          "submission_status": "AP",
+          "submission_status_date": "19980206",
+          "review_priority": "PRIORITY",
+          "submission_class_code": "MANUF (CMC)",
+          "submission_class_code_description": "Manufacturing (CMC)"
+        },
+        {
+          "submission_type": "SUPPL",
+          "submission_number": "62",
+          "submission_status": "AP",
+          "submission_status_date": "20121031",
+          "review_priority": "901 REQUIRED",
+          "submission_class_code": "LABELING",
+          "submission_class_code_description": "Labeling",
+          "application_docs": [
+            {
+              "id": "3133",
+              "url": "http://www.accessdata.fda.gov/drugsatfda_docs/appletter/2012/020702Orig1s062,s063ltr.pdf",
+              "date": "20121105",
+              "type": "Letter"
+            },
+            {
+              "id": "35177",
+              "url": "http://www.accessdata.fda.gov/drugsatfda_docs/label/2012/020702s062s063lbl.pdf",
+              "date": "20121102",
+              "type": "Label"
+            }
+          ]
+        },
+        {
+          "submission_type": "SUPPL",
+          "submission_number": "5",
+          "submission_status": "AP",
+          "submission_status_date": "19980710",
+          "review_priority": "STANDARD",
+          "submission_class_code": "EFFICACY",
+          "submission_class_code_description": "Efficacy",
+          "application_docs": [
+            {
+              "id": "20844",
+              "url": "http://www.accessdata.fda.gov/drugsatfda_docs/nda/98/20702s005.html",
+              "date": "19980710",
+              "type": "Review"
+            },
+            {
+              "id": "25565",
+              "url": "http://www.accessdata.fda.gov/drugsatfda_docs/appletter/1998/20702ltrs003s005.pdf",
+              "date": "19980710",
+              "type": "Letter"
+            }
+          ]
+        },
+        {
+          "submission_type": "SUPPL",
+          "submission_number": "46",
+          "submission_status": "AP",
+          "submission_status_date": "20060623",
+          "review_priority": "STANDARD",
+          "submission_class_code": "LABELING",
+          "submission_class_code_description": "Labeling",
+          "application_docs": [
+            {
+              "id": "23061",
+              "url": "http://www.accessdata.fda.gov/drugsatfda_docs/label/2006/020702s046Pi.pdf",
+              "date": "20060628",
+              "type": "Patient Package Insert"
+            },
+            {
+              "id": "3131",
+              "url": "http://www.accessdata.fda.gov/drugsatfda_docs/appletter/2006/020702s046LTR.pdf",
+              "date": "20060627",
+              "type": "Letter"
+            }
+          ]
+        },
+        {
+          "submission_type": "SUPPL",
+          "submission_number": "60",
+          "submission_status": "AP",
+          "submission_status_date": "20120228",
+          "review_priority": "UNKNOWN",
+          "submission_class_code": "LABELING",
+          "submission_class_code_description": "Labeling",
+          "application_docs": [
+            {
+              "id": "41591",
+              "url": "http://www.accessdata.fda.gov/drugsatfda_docs/nda/2012/020702s060.pdf",
+              "date": "20120330",
+              "type": "Review"
+            },
+            {
+              "id": "25576",
+              "url": "http://www.accessdata.fda.gov/drugsatfda_docs/appletter/2012/020702s060ltr.pdf",
+              "date": "20120228",
+              "type": "Letter"
+            },
+            {
+              "id": "35176",
+              "url": "http://www.accessdata.fda.gov/drugsatfda_docs/label/2012/020702Orig1s060lbl.pdf",
+              "date": "20120228",
+              "type": "Label"
+            }
+          ]
+        },
+        {
+          "submission_type": "SUPPL",
+          "submission_number": "3",
+          "submission_status": "AP",
+          "submission_status_date": "19980710",
+          "review_priority": "STANDARD",
+          "submission_class_code": "EFFICACY",
+          "submission_class_code_description": "Efficacy",
+          "application_docs": [
+            {
+              "id": "3124",
+              "url": "http://www.accessdata.fda.gov/drugsatfda_docs/appletter/1998/20702ltrs003s005.pdf",
+              "date": "19980710",
+              "type": "Letter"
+            },
+            {
+              "id": "20843",
+              "url": "http://www.accessdata.fda.gov/drugsatfda_docs/nda/98/20702s005.html",
+              "date": "19981112",
+              "type": "Review"
+            }
+          ]
+        },
+        {
+          "submission_type": "SUPPL",
+          "submission_number": "44",
+          "submission_status": "AP",
+          "submission_status_date": "20060807",
+          "review_priority": "STANDARD",
+          "submission_class_code": "LABELING",
+          "submission_class_code_description": "Labeling",
+          "application_docs": [
+            {
+              "id": "35171",
+              "url": "http://www.accessdata.fda.gov/drugsatfda_docs/label/2006/020702s044lbl.pdf",
+              "date": "20060809",
+              "type": "Label"
+            },
+            {
+              "id": "3130",
+              "url": "http://www.accessdata.fda.gov/drugsatfda_docs/appletter/2006/020702s044LTR.pdf",
+              "date": "20060809",
+              "type": "Letter"
+            }
+          ]
+        },
+        {
+          "submission_type": "SUPPL",
+          "submission_number": "1",
+          "submission_status": "AP",
+          "submission_status_date": "19970718",
+          "review_priority": "PRIORITY",
+          "submission_class_code": "MANUF (CMC)",
+          "submission_class_code_description": "Manufacturing (CMC)"
+        },
+        {
+          "submission_type": "SUPPL",
+          "submission_number": "36",
+          "submission_status": "AP",
+          "submission_status_date": "20030512",
+          "review_priority": "STANDARD",
+          "submission_class_code": "LABELING",
+          "submission_class_code_description": "Labeling",
+          "application_docs": [
+            {
+              "id": "41589",
+              "url": "http://www.accessdata.fda.gov/drugsatfda_docs/nda/2003/020702_S036_LIPITOR.pdf",
+              "date": "20070926",
+              "type": "Review"
+            },
+            {
+              "id": "13246",
+              "url": "http://www.accessdata.fda.gov/drugsatfda_docs/label/2003/20702slr036_lipitor_lbl.pdf",
+              "date": "20030529",
+              "type": "Label"
+            },
+            {
+              "id": "3127",
+              "url": "http://www.accessdata.fda.gov/drugsatfda_docs/appletter/2003/20702slr036ltr.pdf",
+              "date": "20030608",
+              "type": "Letter"
+            }
+          ]
+        },
+        {
+          "submission_type": "SUPPL",
+          "submission_number": "50",
+          "submission_status": "AP",
+          "submission_status_date": "20070926",
+          "review_priority": "STANDARD",
+          "submission_class_code": "LABELING",
+          "submission_class_code_description": "Labeling",
+          "application_docs": [
+            {
+              "id": "35173",
+              "url": "http://www.accessdata.fda.gov/drugsatfda_docs/label/2007/020702s050lbl.pdf",
+              "date": "20070926",
+              "type": "Label"
+            },
+            {
+              "id": "25574",
+              "url": "http://www.accessdata.fda.gov/drugsatfda_docs/appletter/2007/020702s050ltr.pdf",
+              "date": "20071004",
+              "type": "Letter"
+            }
+          ]
+        },
+        {
+          "submission_type": "ORIG",
+          "submission_number": "1",
+          "submission_status": "AP",
+          "submission_status_date": "19961217",
+          "review_priority": "PRIORITY",
+          "submission_class_code": "TYPE 1",
+          "submission_class_code_description": "Type 1 - New Molecular Entity",
+          "application_docs": [
+            {
+              "id": "20841",
+              "url": "http://www.accessdata.fda.gov/drugsatfda_docs/nda/pre96/020702_s000.pdf",
+              "date": "20100316",
+              "type": "Review"
+            }
+          ]
+        },
+        {
+          "submission_type": "SUPPL",
+          "submission_number": "28",
+          "submission_status": "AP",
+          "submission_status_date": "20011120",
+          "review_priority": "PRIORITY",
+          "submission_class_code": "MANUF (CMC)",
+          "submission_class_code_description": "Manufacturing (CMC)",
+          "application_docs": [
+            {
+              "id": "20852",
+              "url": "http://www.accessdata.fda.gov/drugsatfda_docs/nda/2001/020702_S028_LIPITOR.pdf",
+              "date": "20071206",
+              "type": "Review"
+            }
+          ]
+        },
+        {
+          "submission_type": "SUPPL",
+          "submission_number": "42",
+          "submission_status": "AP",
+          "submission_status_date": "20050921",
+          "review_priority": "UNKNOWN",
+          "submission_class_code": "EFFICACY",
+          "submission_class_code_description": "Efficacy",
+          "application_docs": [
+            {
+              "id": "3128",
+              "url": "http://www.accessdata.fda.gov/drugsatfda_docs/appletter/2005/020702s042ltr.pdf",
+              "date": "20051020",
+              "type": "Letter"
+            },
+            {
+              "id": "35170",
+              "url": "http://www.accessdata.fda.gov/drugsatfda_docs/label/2005/020702s042lbl.pdf",
+              "date": "20050930",
+              "type": "Label"
+            }
+          ]
+        },
+        {
+          "submission_type": "SUPPL",
+          "submission_number": "34",
+          "submission_status": "AP",
+          "submission_status_date": "20020422",
+          "review_priority": "STANDARD",
+          "submission_class_code": "LABELING",
+          "submission_class_code_description": "Labeling",
+          "application_docs": [
+            {
+              "id": "13245",
+              "url": "http://www.accessdata.fda.gov/drugsatfda_docs/label/2002/20702s29s34lbl.pdf",
+              "date": "20040608",
+              "type": "Label"
+            },
+            {
+              "id": "3126",
+              "url": "http://www.accessdata.fda.gov/drugsatfda_docs/appletter/2002/20702s029s034.pdf",
+              "date": "20040608",
+              "type": "Letter"
+            }
+          ]
+        },
+        {
+          "submission_type": "SUPPL",
+          "submission_number": "79",
+          "submission_status": "AP",
+          "submission_status_date": "20221207",
+          "review_priority": "STANDARD",
+          "submission_class_code": "LABELING",
+          "submission_class_code_description": "Labeling",
+          "application_docs": [
+            {
+              "id": "72831",
+              "url": "http://www.accessdata.fda.gov/drugsatfda_docs/label/2022/020702Orig1s079correctedlbl.pdf",
+              "date": "20221209",
+              "type": "Label"
+            },
+            {
+              "id": "72893",
+              "url": "https://www.accessdata.fda.gov/drugsatfda_docs/appletter/2022/020702Orig1s079correctedltr.pdf",
+              "date": "20221215",
+              "type": "Letter"
+            }
+          ]
+        },
+        {
+          "submission_type": "SUPPL",
+          "submission_number": "18",
+          "submission_status": "AP",
+          "submission_status_date": "19991202",
+          "review_priority": "STANDARD",
+          "submission_class_code": "EFFICACY",
+          "submission_class_code_description": "Efficacy",
+          "application_docs": [
+            {
+              "id": "41585",
+              "url": "http://www.accessdata.fda.gov/drugsatfda_docs/nda/99/020702-S018_Lipitor.html",
+              "date": "20010226",
+              "type": "Review"
+            },
+            {
+              "id": "25566",
+              "url": "http://www.accessdata.fda.gov/drugsatfda_docs/appletter/1999/20702S18LTR.PDF",
+              "date": "19991202",
+              "type": "Letter"
+            }
+          ]
+        },
+        {
+          "submission_type": "SUPPL",
+          "submission_number": "32",
+          "submission_status": "AP",
+          "submission_status_date": "20020408",
+          "review_priority": "PRIORITY",
+          "submission_class_code": "MANUF (CMC)",
+          "submission_class_code_description": "Manufacturing (CMC)"
+        },
+        {
+          "submission_type": "SUPPL",
+          "submission_number": "24",
+          "submission_status": "AP",
+          "submission_status_date": "20001114",
+          "review_priority": "PRIORITY",
+          "submission_class_code": "MANUF (CMC)",
+          "submission_class_code_description": "Manufacturing (CMC)",
+          "application_docs": [
+            {
+              "id": "20850",
+              "url": "http://www.accessdata.fda.gov/drugsatfda_docs/nda/2000/020702_S024_LIPITOR_TABLETS.pdf",
+              "date": "20080219",
+              "type": "Review"
+            }
+          ]
+        },
+        {
+          "submission_type": "SUPPL",
+          "submission_number": "77",
+          "submission_status": "AP",
+          "submission_status_date": "20201116",
+          "review_priority": "STANDARD",
+          "submission_class_code": "LABELING",
+          "submission_class_code_description": "Labeling",
+          "application_docs": [
+            {
+              "id": "65234",
+              "url": "http://www.accessdata.fda.gov/drugsatfda_docs/label/2020/020702s077lbl.pdf",
+              "date": "20201116",
+              "type": "Label"
+            },
+            {
+              "id": "65260",
+              "url": "http://www.accessdata.fda.gov/drugsatfda_docs/appletter/2020/020702Orig1s077ltr.pdf",
+              "date": "20201118",
+              "type": "Letter"
+            }
+          ]
+        },
+        {
+          "submission_type": "SUPPL",
+          "submission_number": "30",
+          "submission_status": "AP",
+          "submission_status_date": "20011227",
+          "review_priority": "PRIORITY",
+          "submission_class_code": "MANUF (CMC)",
+          "submission_class_code_description": "Manufacturing (CMC)",
+          "application_docs": [
+            {
+              "id": "20853",
+              "url": "http://www.accessdata.fda.gov/drugsatfda_docs/nda/2001/020702_S030_LIPITOR.pdf",
+              "date": "20071206",
+              "type": "Review"
+            }
+          ]
+        },
+        {
+          "submission_type": "SUPPL",
+          "submission_number": "69",
+          "submission_status": "AP",
+          "submission_status_date": "20170623",
+          "review_priority": "901 REQUIRED",
+          "submission_class_code": "LABELING",
+          "submission_class_code_description": "Labeling",
+          "application_docs": [
+            {
+              "id": "48840",
+              "url": "http://www.accessdata.fda.gov/drugsatfda_docs/appletter/2017/020702Orig1s067s069ltr.pdf",
+              "date": "20170627",
+              "type": "Letter"
+            },
+            {
+              "id": "48846",
+              "url": "http://www.accessdata.fda.gov/drugsatfda_docs/label/2017/020702s067s069lbl.pdf",
+              "date": "20170627",
+              "type": "Label"
+            }
+          ]
+        },
+        {
+          "submission_type": "SUPPL",
+          "submission_number": "22",
+          "submission_status": "AP",
+          "submission_status_date": "20000407",
+          "review_priority": "PRIORITY",
+          "submission_class_code": "MANUF (CMC)",
+          "submission_class_code_description": "Manufacturing (CMC)",
+          "application_docs": [
+            {
+              "id": "20849",
+              "url": "http://www.accessdata.fda.gov/drugsatfda_docs/nda/2000/020702_S022_LIPITOR_AP.pdf",
+              "date": "20070706",
+              "type": "Review"
+            }
+          ]
+        },
+        {
+          "submission_type": "SUPPL",
+          "submission_number": "14",
+          "submission_status": "AP",
+          "submission_status_date": "19980828",
+          "review_priority": "STANDARD",
+          "submission_class_code": "LABELING",
+          "submission_class_code_description": "Labeling",
+          "application_docs": [
+            {
+              "id": "20848",
+              "url": "http://www.accessdata.fda.gov/drugsatfda_docs/nda/98/020702A_S014.PDF",
+              "date": "19981214",
+              "type": "Review"
+            }
+          ]
+        },
+        {
+          "submission_type": "SUPPL",
+          "submission_number": "67",
+          "submission_status": "AP",
+          "submission_status_date": "20170623",
+          "review_priority": "STANDARD",
+          "submission_class_code": "EFFICACY",
+          "submission_class_code_description": "Efficacy",
+          "application_docs": [
+            {
+              "id": "48839",
+              "url": "http://www.accessdata.fda.gov/drugsatfda_docs/appletter/2017/020702Orig1s067s069ltr.pdf",
+              "date": "20170627",
+              "type": "Letter"
+            },
+            {
+              "id": "48845",
+              "url": "http://www.accessdata.fda.gov/drugsatfda_docs/label/2017/020702s067s069lbl.pdf",
+              "date": "20170627",
+              "type": "Label"
+            }
+          ]
+        },
+        {
+          "submission_type": "SUPPL",
+          "submission_number": "81",
+          "submission_status": "AP",
+          "submission_status_date": "20240402",
+          "review_priority": "STANDARD",
+          "submission_class_code": "LABELING",
+          "submission_class_code_description": "Labeling",
+          "application_docs": [
+            {
+              "id": "78041",
+              "url": "https://www.accessdata.fda.gov/drugsatfda_docs/appletter/2024/020702Orig1s081ltr.pdf",
+              "date": "20240403",
+              "type": "Letter"
+            },
+            {
+              "id": "78046",
+              "url": "http://www.accessdata.fda.gov/drugsatfda_docs/label/2024/020702s081lbl.pdf",
+              "date": "20240403",
+              "type": "Label"
+            }
+          ]
+        },
+        {
+          "submission_type": "SUPPL",
+          "submission_number": "20",
+          "submission_status": "AP",
+          "submission_status_date": "19991222",
+          "review_priority": "PRIORITY",
+          "submission_class_code": "MANUF (CMC)",
+          "submission_class_code_description": "Manufacturing (CMC)"
+        },
+        {
+          "submission_type": "SUPPL",
+          "submission_number": "73",
+          "submission_status": "AP",
+          "submission_status_date": "20190412",
+          "review_priority": "STANDARD",
+          "submission_class_code": "LABELING",
+          "submission_class_code_description": "Labeling",
+          "application_docs": [
+            {
+              "id": "58330",
+              "url": "http://www.accessdata.fda.gov/drugsatfda_docs/appletter/2019/020702Orig1s073ltr.pdf",
+              "date": "20190415",
+              "type": "Letter"
+            },
+            {
+              "id": "58348",
+              "url": "http://www.accessdata.fda.gov/drugsatfda_docs/label/2019/020702s073lbl.pdf",
+              "date": "20190422",
+              "type": "Label"
+            }
+          ]
+        },
+        {
+          "submission_type": "SUPPL",
+          "submission_number": "12",
+          "submission_status": "AP",
+          "submission_status_date": "19980603",
+          "review_priority": "STANDARD",
+          "submission_class_code": "LABELING",
+          "submission_class_code_description": "Labeling",
+          "application_docs": [
+            {
+              "id": "41584",
+              "url": "http://www.accessdata.fda.gov/drugsatfda_docs/nda/98/020702_S012_LIPITOR.pdf",
+              "date": "20071119",
+              "type": "Review"
+            }
+          ]
+        },
+        {
+          "submission_type": "SUPPL",
+          "submission_number": "65",
+          "submission_status": "AP",
+          "submission_status_date": "20150311",
+          "review_priority": "STANDARD",
+          "submission_class_code": "LABELING",
+          "submission_class_code_description": "Labeling",
+          "application_docs": [
+            {
+              "id": "3135",
+              "url": "http://www.accessdata.fda.gov/drugsatfda_docs/appletter/2015/020702Orig1s065ltr.pdf",
+              "date": "20150313",
+              "type": "Letter"
+            },
+            {
+              "id": "35179",
+              "url": "http://www.accessdata.fda.gov/drugsatfda_docs/label/2015/020702s065lbl.pdf",
+              "date": "20150317",
+              "type": "Label"
+            }
+          ]
+        },
+        {
+          "submission_type": "SUPPL",
+          "submission_number": "57",
+          "submission_status": "AP",
+          "submission_status_date": "20090327",
+          "review_priority": "STANDARD",
+          "submission_class_code": "LABELING",
+          "submission_class_code_description": "Labeling",
+          "application_docs": [
+            {
+              "id": "25575",
+              "url": "http://www.accessdata.fda.gov/drugsatfda_docs/appletter/2009/020702s057ltr.pdf",
+              "date": "20090401",
+              "type": "Letter"
+            },
+            {
+              "id": "35175",
+              "url": "http://www.accessdata.fda.gov/drugsatfda_docs/label/2009/020702s057lbl.pdf",
+              "date": "20090403",
+              "type": "Label"
+            }
+          ]
+        },
+        {
+          "submission_type": "SUPPL",
+          "submission_number": "71",
+          "submission_status": "AP",
+          "submission_status_date": "20180810",
+          "review_priority": "STANDARD",
+          "submission_class_code": "LABELING",
+          "submission_class_code_description": "Labeling",
+          "application_docs": [
+            {
+              "id": "55168",
+              "url": "http://www.accessdata.fda.gov/drugsatfda_docs/label/2018/020702s071lbl.pdf",
+              "date": "20180813",
+              "type": "Label"
+            },
+            {
+              "id": "55225",
+              "url": "http://www.accessdata.fda.gov/drugsatfda_docs/appletter/2018/020702Oirg1s071ltr.pdf",
+              "date": "20180820",
+              "type": "Letter"
+            }
+          ]
+        },
+        {
+          "submission_type": "SUPPL",
+          "submission_number": "8",
+          "submission_status": "AP",
+          "submission_status_date": "19971105",
+          "review_priority": "STANDARD",
+          "submission_class_code": "LABELING",
+          "submission_class_code_description": "Labeling",
+          "application_docs": [
+            {
+              "id": "41582",
+              "url": "http://www.accessdata.fda.gov/drugsatfda_docs/nda/97/020702_S008_LIPITOR_TABLETS_AP.pdf",
+              "date": "20070706",
+              "type": "Review"
+            }
+          ]
+        },
+        {
+          "submission_type": "SUPPL",
+          "submission_number": "10",
+          "submission_status": "AP",
+          "submission_status_date": "19980429",
+          "review_priority": "PRIORITY",
+          "submission_class_code": "MANUF (CMC)",
+          "submission_class_code_description": "Manufacturing (CMC)",
+          "application_docs": [
+            {
+              "id": "20845",
+              "url": "http://www.accessdata.fda.gov/drugsatfda_docs/nda/98/020702_S010_LIPITOR.pdf",
+              "date": "20071119",
+              "type": "Review"
+            }
+          ]
+        },
+        {
+          "submission_type": "SUPPL",
+          "submission_number": "49",
+          "submission_status": "AP",
+          "submission_status_date": "20070116",
+          "review_priority": "STANDARD",
+          "submission_class_code": "LABELING",
+          "submission_class_code_description": "Labeling",
+          "application_docs": [
+            {
+              "id": "25573",
+              "url": "http://www.accessdata.fda.gov/drugsatfda_docs/appletter/2007/020702s049ltr.pdf",
+              "date": "20070125",
+              "type": "Letter"
+            },
+            {
+              "id": "35172",
+              "url": "http://www.accessdata.fda.gov/drugsatfda_docs/label/2007/020702s049lbl.pdf",
+              "date": "20070118",
+              "type": "Label"
+            }
+          ]
+        },
+        {
+          "submission_type": "SUPPL",
+          "submission_number": "63",
+          "submission_status": "AP",
+          "submission_status_date": "20121031",
+          "review_priority": "STANDARD",
+          "submission_class_code": "LABELING",
+          "submission_class_code_description": "Labeling",
+          "application_docs": [
+            {
+              "id": "13249",
+              "url": "http://www.accessdata.fda.gov/drugsatfda_docs/label/2012/020702s062s063lbl.pdf",
+              "date": "20121102",
+              "type": "Label"
+            },
+            {
+              "id": "3134",
+              "url": "http://www.accessdata.fda.gov/drugsatfda_docs/appletter/2012/020702Orig1s062,s063ltr.pdf",
+              "date": "20121105",
+              "type": "Letter"
+            }
+          ]
+        },
+        {
+          "submission_type": "SUPPL",
+          "submission_number": "47",
+          "submission_status": "AP",
+          "submission_status_date": "20070302",
+          "review_priority": "UNKNOWN",
+          "submission_class_code": "EFFICACY",
+          "submission_class_code_description": "Efficacy",
+          "application_docs": [
+            {
+              "id": "13248",
+              "url": "http://www.accessdata.fda.gov/drugsatfda_docs/label/2007/020702s047lbl.pdf",
+              "date": "20070307",
+              "type": "Label"
+            },
+            {
+              "id": "25572",
+              "url": "http://www.accessdata.fda.gov/drugsatfda_docs/appletter/2007/020702s047ltr.pdf",
+              "date": "20070307",
+              "type": "Letter"
+            }
+          ]
+        },
+        {
+          "submission_type": "SUPPL",
+          "submission_number": "61",
+          "submission_status": "AP",
+          "submission_status_date": "20121130",
+          "review_priority": "PRIORITY",
+          "submission_class_code": "MANUF (CMC)",
+          "submission_class_code_description": "Manufacturing (CMC)"
+        },
+        {
+          "submission_type": "SUPPL",
+          "submission_number": "39",
+          "submission_status": "AP",
+          "submission_status_date": "20040730",
+          "review_priority": "STANDARD",
+          "submission_class_code": "EFFICACY",
+          "submission_class_code_description": "Efficacy",
+          "application_docs": [
+            {
+              "id": "41590",
+              "url": "http://www.accessdata.fda.gov/drugsatfda_docs/nda/2003/020702_s039_LIPITOR_TABLETS.pdf",
+              "date": "20080801",
+              "type": "Review"
+            },
+            {
+              "id": "25571",
+              "url": "http://www.accessdata.fda.gov/drugsatfda_docs/appletter/2004/20702s039ltr.pdf",
+              "date": "20040802",
+              "type": "Letter"
+            }
+          ]
+        },
+        {
+          "submission_type": "SUPPL",
+          "submission_number": "4",
+          "submission_status": "AP",
+          "submission_status_date": "19980202",
+          "review_priority": "STANDARD",
+          "submission_class_code": "LABELING",
+          "submission_class_code_description": "Labeling",
+          "application_docs": [
+            {
+              "id": "41581",
+              "url": "http://www.accessdata.fda.gov/drugsatfda_docs/nda/98/020702a_s004.pdf",
+              "date": "19981023",
+              "type": "Review"
+            }
+          ]
+        },
+        {
+          "submission_type": "SUPPL",
+          "submission_number": "2",
+          "submission_status": "AP",
+          "submission_status_date": "19971028",
+          "review_priority": "STANDARD",
+          "submission_class_code": "LABELING",
+          "submission_class_code_description": "Labeling",
+          "application_docs": [
+            {
+              "id": "20842",
+              "url": "http://www.accessdata.fda.gov/drugsatfda_docs/nda/97/020702a_s002.pdf",
+              "date": "19971128",
+              "type": "Review"
+            }
+          ]
+        },
+        {
+          "submission_type": "SUPPL",
+          "submission_number": "37",
+          "submission_status": "AP",
+          "submission_status_date": "20030929",
+          "review_priority": "PRIORITY",
+          "submission_class_code": "MANUF (CMC)",
+          "submission_class_code_description": "Manufacturing (CMC)",
+          "application_docs": [
+            {
+              "id": "13247",
+              "url": "http://www.accessdata.fda.gov/drugsatfda_docs/label/2003/20702scs037_lipitor_lbl.pdf",
+              "date": "20031010",
+              "type": "Label"
+            },
+            {
+              "id": "20855",
+              "url": "http://www.accessdata.fda.gov/drugsatfda_docs/nda/2003/020702_s037_LIPITOR_TABLETS.pdf",
+              "date": "20080801",
+              "type": "Review"
+            },
+            {
+              "id": "25570",
+              "url": "http://www.accessdata.fda.gov/drugsatfda_docs/appletter/2003/20702scs037ltr.pdf",
+              "date": "20031009",
+              "type": "Letter"
+            }
+          ]
+        },
+        {
+          "submission_type": "SUPPL",
+          "submission_number": "29",
+          "submission_status": "AP",
+          "submission_status_date": "20020422",
+          "review_priority": "STANDARD",
+          "submission_class_code": "EFFICACY",
+          "submission_class_code_description": "Efficacy",
+          "application_docs": [
+            {
+              "id": "3125",
+              "url": "http://www.accessdata.fda.gov/drugsatfda_docs/appletter/2002/20702s029s034.pdf",
+              "date": "20020422",
+              "type": "Letter"
+            },
+            {
+              "id": "35169",
+              "url": "http://www.accessdata.fda.gov/drugsatfda_docs/label/2002/20702s29s34lbl.pdf",
+              "date": "20020422",
+              "type": "Label"
+            }
+          ]
+        },
+        {
+          "submission_type": "SUPPL",
+          "submission_number": "43",
+          "submission_status": "AP",
+          "submission_status_date": "20051011",
+          "review_priority": "STANDARD",
+          "submission_class_code": "LABELING",
+          "submission_class_code_description": "Labeling",
+          "application_docs": [
+            {
+              "id": "3129",
+              "url": "http://www.accessdata.fda.gov/drugsatfda_docs/appletter/2005/020702s043ltr.pdf",
+              "date": "20051014",
+              "type": "Letter"
+            }
+          ]
+        },
+        {
+          "submission_type": "SUPPL",
+          "submission_number": "35",
+          "submission_status": "AP",
+          "submission_status_date": "20020702",
+          "review_priority": "PRIORITY",
+          "submission_class_code": "MANUF (CMC)",
+          "submission_class_code_description": "Manufacturing (CMC)",
+          "application_docs": [
+            {
+              "id": "41588",
+              "url": "http://www.accessdata.fda.gov/drugsatfda_docs/nda/2002/020702_S035_LIPITOR.pdf",
+              "date": "20070926",
+              "type": "Review"
+            }
+          ]
+        },
+        {
+          "submission_type": "SUPPL",
+          "submission_number": "27",
+          "submission_status": "AP",
+          "submission_status_date": "20040524",
+          "review_priority": "STANDARD",
+          "submission_class_code": "LABELING",
+          "submission_class_code_description": "Labeling",
+          "application_docs": [
+            {
+              "id": "41587",
+              "url": "http://www.accessdata.fda.gov/drugsatfda_docs/nda/2004/020702_s027_LIPITOR_TABLETS.pdf",
+              "date": "20080731",
+              "type": "Review"
+            },
+            {
+              "id": "43563",
+              "url": "http://www.accessdata.fda.gov/drugsatfda_docs/label/2004/20702slr027_lipitor_lbl.pdf",
+              "date": "20040527",
+              "type": "Patient Package Insert"
+            },
+            {
+              "id": "25568",
+              "url": "http://www.accessdata.fda.gov/drugsatfda_docs/appletter/2004/20702slr027ltr.pdf",
+              "date": "20040526",
+              "type": "Letter"
+            }
+          ]
+        }
+      ],
+      "application_number": "NDA020702",
+      "sponsor_name": "UPJOHN",
+      "openfda": {
+        "application_number": [
+          "NDA020702"
+        ],
+        "brand_name": [
+          "LIPITOR"
+        ],
+        "generic_name": [
+          "ATORVASTATIN CALCIUM"
+        ],
+        "manufacturer_name": [
+          "Viatris Specialty LLC"
+        ],
+        "product_ndc": [
+          "58151-155",
+          "58151-156",
+          "58151-157",
+          "58151-158"
+        ],
+        "product_type": [
+          "HUMAN PRESCRIPTION DRUG"
+        ],
+        "route": [
+          "ORAL"
+        ],
+        "substance_name": [
+          "ATORVASTATIN CALCIUM TRIHYDRATE"
+        ],
+        "rxcui": [
+          "259255",
+          "262095",
+          "617310",
+          "617311",
+          "617312",
+          "617314",
+          "617318",
+          "617320"
+        ],
+        "spl_id": [
+          "dd011a82-7356-4b83-86c4-b21cd9138fc6"
+        ],
+        "spl_set_id": [
+          "a60cc18b-0631-4cf0-b021-9f52224ece65"
+        ],
+        "package_ndc": [
+          "58151-155-77",
+          "58151-156-77",
+          "58151-157-77",
+          "58151-158-77"
+        ],
+        "unii": [
+          "48A5M73Z4Q"
+        ]
+      },
+      "products": [
+        {
+          "product_number": "004",
+          "reference_drug": "Yes",
+          "brand_name": "LIPITOR",
+          "active_ingredients": [
+            {
+              "name": "ATORVASTATIN CALCIUM",
+              "strength": "EQ 80MG BASE"
+            }
+          ],
+          "reference_standard": "Yes",
+          "dosage_form": "TABLET",
+          "route": "ORAL",
+          "marketing_status": "Prescription",
+          "te_code": "AB"
+        },
+        {
+          "product_number": "002",
+          "reference_drug": "Yes",
+          "brand_name": "LIPITOR",
+          "active_ingredients": [
+            {
+              "name": "ATORVASTATIN CALCIUM",
+              "strength": "EQ 20MG BASE"
+            }
+          ],
+          "reference_standard": "No",
+          "dosage_form": "TABLET",
+          "route": "ORAL",
+          "marketing_status": "Prescription",
+          "te_code": "AB"
+        },
+        {
+          "product_number": "003",
+          "reference_drug": "Yes",
+          "brand_name": "LIPITOR",
+          "active_ingredients": [
+            {
+              "name": "ATORVASTATIN CALCIUM",
+              "strength": "EQ 40MG BASE"
+            }
+          ],
+          "reference_standard": "No",
+          "dosage_form": "TABLET",
+          "route": "ORAL",
+          "marketing_status": "Prescription",
+          "te_code": "AB"
+        },
+        {
+          "product_number": "001",
+          "reference_drug": "Yes",
+          "brand_name": "LIPITOR",
+          "active_ingredients": [
+            {
+              "name": "ATORVASTATIN CALCIUM",
+              "strength": "EQ 10MG BASE"
+            }
+          ],
+          "reference_standard": "No",
+          "dosage_form": "TABLET",
+          "route": "ORAL",
+          "marketing_status": "Prescription",
+          "te_code": "AB"
+        }
+      ]
+    }
+  ]
+}

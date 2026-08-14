@@ -1,0 +1,394 @@
+/* ─── App Shell ─── */
+.appShell {
+  display: flex;
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+}
+
+.main {
+  flex: 1;
+  min-width: 0;
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+/* ─── Semantic Model Full-Screen ─── */
+.graphFullScreen {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  padding: 32px 36px;
+  gap: 20px;
+}
+
+.graphHeader { flex-shrink: 0; }
+
+.graphTitle {
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: var(--text-primary);
+}
+
+.graphSub {
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+  margin-top: 6px;
+}
+
+.graphCanvas {
+  flex: 1;
+  border-radius: 20px;
+  overflow: hidden;
+  border: 1px solid var(--card-border);
+  background: rgba(13, 17, 23, 0.5);
+  backdrop-filter: var(--card-blur);
+}
+
+/* ─── Query Layout ─── */
+.queryLayout {
+  display: flex;
+  gap: 0;
+  height: 100%;
+  overflow: hidden;
+}
+
+.promptPanel {
+  width: 420px;
+  min-width: 380px;
+  height: 100%;
+  overflow-y: auto;
+  padding: 36px 24px 36px 36px;
+  border-right: 1px solid var(--sidebar-border);
+  flex-shrink: 0;
+}
+
+.queryPanel {
+  flex: 1;
+  min-width: 0;
+  height: 100%;
+  overflow-y: auto;
+  padding: 36px 36px 36px 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+/* ─── Card ─── */
+.card {
+  background: var(--card-bg);
+  border: 1px solid var(--card-border);
+  border-radius: 20px;
+  backdrop-filter: var(--card-blur);
+  overflow: hidden;
+  flex-shrink: 0;
+}
+
+.queryCard {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+.cardHeader {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 20px 24px 16px;
+  border-bottom: 1px solid var(--card-border);
+}
+
+.cardLabel {
+  font-size: 0.88rem;
+  font-weight: 600;
+  color: var(--text-secondary);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+/* ─── Textarea ─── */
+.textarea {
+  width: 100%;
+  min-height: 130px;
+  background: transparent;
+  border: none;
+  padding: 20px 24px;
+  color: var(--text-primary);
+  font-family: 'Outfit', sans-serif;
+  font-size: 1.05rem;
+  line-height: 1.65;
+  resize: none;
+  outline: none;
+  border-bottom: 1px solid var(--card-border);
+  transition: background 0.2s ease;
+}
+
+.textarea::placeholder { color: var(--text-muted); font-weight: 300; }
+.textarea:focus { background: rgba(255, 255, 255, 0.02); }
+
+/* ─── Query Footer ─── */
+.queryFooter {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px 24px;
+}
+
+.queryHint {
+  font-size: 0.78rem;
+  color: var(--text-muted);
+}
+
+/* ─── Run Button (per module) ─── */
+.runBtn {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 22px;
+  border: none;
+  border-radius: 10px;
+  font-family: inherit;
+  font-size: 0.9rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.25s ease;
+  flex-shrink: 0;
+}
+
+.runBtn:disabled {
+  background: rgba(255,255,255,0.05) !important;
+  color: var(--text-muted) !important;
+  box-shadow: none !important;
+  cursor: not-allowed;
+}
+
+.accentCyanBtn { background: var(--accent-color); color: #080c14; box-shadow: 0 4px 16px var(--accent-glow); }
+.accentCyanBtn:hover:not(:disabled) { background: #67e8f9; box-shadow: 0 6px 24px var(--accent-glow); transform: translateY(-1px); }
+
+.accentPatentBtn { background: var(--patent-color); color: #080c14; box-shadow: 0 4px 16px rgba(167,139,250,0.3); }
+.accentPatentBtn:hover:not(:disabled) { background: #c4b5fd; transform: translateY(-1px); }
+
+.accentFtoBtn { background: var(--fto-color); color: #080c14; box-shadow: 0 4px 16px rgba(249,115,22,0.3); }
+.accentFtoBtn:hover:not(:disabled) { background: #fb923c; transform: translateY(-1px); }
+
+.accentMoleculeBtn { background: var(--molecule-color); color: #080c14; box-shadow: 0 4px 16px rgba(16,185,129,0.3); }
+.accentMoleculeBtn:hover:not(:disabled) { background: #34d399; transform: translateY(-1px); }
+
+/* ─── Module icon accent colors ─── */
+.accentCyan { color: var(--accent-color); }
+.accentPatent { color: var(--patent-color); }
+.accentFto { color: var(--fto-color); }
+.accentMolecule { color: var(--molecule-color); }
+.accentModel { color: var(--model-color); }
+
+/* Focus ring per accent */
+.accentCyanFocus:focus { box-shadow: inset 0 0 0 1px rgba(34,211,238,0.3); }
+.accentPatentFocus:focus { box-shadow: inset 0 0 0 1px rgba(167,139,250,0.3); }
+.accentFtoFocus:focus { box-shadow: inset 0 0 0 1px rgba(249,115,22,0.3); }
+.accentMoleculeFocus:focus { box-shadow: inset 0 0 0 1px rgba(16,185,129,0.3); }
+
+/* ─── SQL Box ─── */
+.sqlBox {
+  border-bottom: 1px solid var(--card-border);
+}
+
+.sqlHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 14px 20px;
+  background: rgba(0, 0, 0, 0.3);
+}
+
+.sqlTitle {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: var(--text-secondary);
+}
+
+.sqlActions {
+  display: flex;
+  gap: 6px;
+}
+
+.iconBtn {
+  width: 28px;
+  height: 28px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid var(--card-border);
+  background: transparent;
+  border-radius: 6px;
+  color: var(--text-secondary);
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.iconBtn:hover {
+  background: rgba(255,255,255,0.06);
+  color: var(--text-primary);
+}
+
+.sqlCode {
+  padding: 20px;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.88rem;
+  color: #7dd3fc;
+  white-space: pre-wrap;
+  line-height: 1.7;
+  background: #050810;
+  max-height: 220px;
+  overflow-y: auto;
+}
+
+/* ─── Results Header ─── */
+.resultsHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 14px 20px;
+  border-bottom: 1px solid var(--card-border);
+}
+
+.resultsMeta {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.resultsBadge {
+  background: rgba(255,255,255,0.06);
+  border: 1px solid var(--card-border);
+  padding: 4px 12px;
+  border-radius: 99px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--text-primary);
+}
+
+.resultsTime {
+  font-size: 0.8rem;
+  color: var(--text-muted);
+}
+
+.exportBtn {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  background: transparent;
+  border: 1px solid var(--card-border);
+  color: var(--text-secondary);
+  padding: 6px 14px;
+  border-radius: 8px;
+  font-family: inherit;
+  font-size: 0.82rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.exportBtn:hover {
+  background: rgba(255,255,255,0.05);
+  color: var(--text-primary);
+  border-color: rgba(255,255,255,0.15);
+}
+
+/* ─── Table ─── */
+.tableWrapper {
+  overflow-x: auto;
+  max-height: 420px;
+  overflow-y: auto;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.88rem;
+}
+
+.th {
+  position: sticky;
+  top: 0;
+  background: #0a0e18;
+  padding: 14px 18px;
+  text-align: left;
+  color: var(--text-secondary);
+  font-weight: 600;
+  font-size: 0.76rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  white-space: nowrap;
+  border-bottom: 1px solid var(--card-border);
+  z-index: 2;
+}
+
+.td {
+  padding: 13px 18px;
+  border-bottom: 1px solid rgba(255,255,255,0.03);
+  color: var(--text-secondary);
+  white-space: nowrap;
+  max-width: 280px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.tr:hover .td {
+  background: rgba(255,255,255,0.02);
+  color: var(--text-primary);
+}
+
+/* ─── Misc ─── */
+.errorBox {
+  display: flex;
+  align-items: flex-start;
+  gap: 14px;
+  background: rgba(248, 113, 113, 0.08);
+  border: 1px solid rgba(248, 113, 113, 0.2);
+  border-radius: 16px;
+  padding: 18px 20px;
+  color: var(--error-color);
+  font-size: 0.9rem;
+}
+
+.errorBox strong { display: block; margin-bottom: 4px; }
+.errorBox p { color: rgba(248, 113, 113, 0.8); font-size: 0.85rem; }
+
+.loadingState {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 32px 28px;
+  color: var(--text-secondary);
+}
+
+.loadingTitle {
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--text-primary);
+}
+
+.loadingSubtitle {
+  font-size: 0.85rem;
+  margin-top: 4px;
+}
+
+.emptyState {
+  padding: 40px 24px;
+  text-align: center;
+  color: var(--text-muted);
+  font-size: 0.9rem;
+}
+
+.spin {
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin { 100% { transform: rotate(360deg); } }
