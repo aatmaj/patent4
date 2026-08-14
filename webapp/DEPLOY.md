@@ -12,9 +12,65 @@ calls and several BigQuery jobs, and a single unguarded BigQuery query over
 `--allow-unauthenticated` and no `API_ACCESS_TOKEN` is a public endpoint that
 bills your account on request.
 
-**Set `API_ACCESS_TOKEN` in the same command that makes the service public.**
-Verified behaviour: no token → 401, wrong token → 401, correct token → the
-request proceeds.
+## Pick an auth model before you deploy — they are not interchangeable
+
+`API_ACCESS_TOKEN` guards the API against machine clients. It does **not** make
+the web UI usable, because the browser sends no `Authorization` header: see the
+`fetch('/api/orchestrator')` call in `src/components/FormuGraph.js`. Deploy with
+the token set and the page loads fine, then every click returns 401.
+
+So choose by who is calling:
+
+| audience | use | UI works? |
+| --- | --- | --- |
+| A few named humans in a browser | **IAP** (below), no token | yes |
+| Scripts, notebooks, another service | `API_ACCESS_TOKEN` | no (API only) |
+| Both | IAP for the UI, token for machines | yes |
+
+### IAP — the right answer for sharing with a handful of people
+
+Identity-Aware Proxy puts Google sign-in in front of the whole service and
+checks each visitor against an allowlist, so the browser is authenticated at the
+edge and the app needs no changes, no login screen and no shared secret to pass
+around. Revoking somebody is removing one IAM binding.
+
+Deploy without `--allow-unauthenticated`, enable IAP on the service, then grant
+each person access:
+
+```bash
+gcloud run services add-iam-policy-binding formugraph \
+  --region asia-south1 \
+  --member="user:colleague@example.com" \
+  --role="roles/run.invoker"
+```
+
+Check the current IAP-on-Cloud-Run setup in the console before scripting it —
+the feature has moved between a load-balancer-fronted setup and direct support
+on the service, and the console reflects whichever your project has.
+
+A shared bearer token is the thing to avoid here: it cannot be revoked per
+person, it ends up pasted into chats, and everyone's spend looks identical in
+the logs.
+
+Verified token behaviour, for the machine-client case: no token → 401, wrong
+token → 401, correct token → the request proceeds.
+
+## Why Cloud Run rather than Vercel
+
+Vercel is the obvious quick answer for a Next.js app, and it is the wrong one
+here, for two specific reasons rather than as a general preference:
+
+- **Runtime.** Measured runs are 150-280 s, and one has exceeded 360 s. Vercel
+  caps a function at 60 s on Hobby and 300 s on Pro. Runs would be killed near
+  the finish line. Cloud Run allows up to 3600 s (`--timeout 900` below).
+- **Credentials.** Off-GCP, BigQuery needs a service-account private key pasted
+  into an environment variable. On Cloud Run the app uses Application Default
+  Credentials from the attached service account, so no key material exists at
+  all. Given a key already sits in this repo's parent directory, not creating a
+  second copy of it is worth something.
+
+Keeping the app in the same project as BigQuery also keeps spend, quotas and
+audit logs in one place — which matters after a Rs 10,000 day.
 
 ## 0. Prerequisites
 
@@ -66,6 +122,15 @@ done
 ## 3. Deploy
 
 Run from `webapp/` — the Dockerfile and `.dockerignore` live there.
+
+No local tooling required: the repo is on GitHub, so you can open
+[Cloud Shell](https://shell.cloud.google.com), `git clone
+git@github.com:aatmaj/patent4.git`, `cd patent4/webapp` and run the command
+below. `gcloud`, `docker` and `git` are all preinstalled there. `--source .`
+builds with Cloud Build, so nothing needs Docker on your Mac.
+
+For the IAP setup described above, drop `--allow-unauthenticated` and omit the
+`API_ACCESS_TOKEN` secret.
 
 ```bash
 gcloud run deploy formugraph \
